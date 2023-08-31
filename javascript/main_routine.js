@@ -166,7 +166,7 @@ function push_Keydown(event){
     //上下右左Altを押すとhtmlが切り替わる。
     if(up_push && down_push && left_push && right_push && alt_push) {
         reset();
-        document.getElementById('body').innerHTML = '<img src="./image/work.png" id="nise_work"></img>'
+        document.getElementById('body').innerHTML = '<img src="./captcha_image/work.png" id="nise_work"></img>'
         document.getElementById("title").innerHTML = "無題のスプレッドシート - Gooogle";
     }
 
@@ -230,7 +230,7 @@ function push_Keydown(event){
         }, 20);
 
         if (Q_l == Q_l-Q_i){
-            document.getElementById("img").src = "./image/" + Q[Q_No] + ".png";
+            document.getElementById("img").src = "./captcha_image/" + Q[Q_No] + ".png";
         //document.getElementById("start").innerHTML = Q[Q_No].substring(Q_i, Q_l); //問題を書き出す
             document.getElementById("start").innerHTML = "";
         }
@@ -250,7 +250,7 @@ function push_Keydown(event){
             Q_No = Math.floor( Math.random() * Q.length);//問題をランダムで出題する
             Q_i = 0;    //回答初期値・現在どこまで合っているか判定している文字番号
             Q_l = Q[Q_No].length;   //計算用の文字の長さ
-            document.getElementById("img").src="./image/" + Q[Q_No] + ".png";
+            document.getElementById("img").src="./captcha_image/" + Q[Q_No] + ".png";
             //document.getElementById("start").innerHTML = Q[Q_No].substring(Q_i, Q_l); //新たな問題を書き出す
             document.getElementById("start").innerHTML = "";
             if(Q_No%10 === 0){
