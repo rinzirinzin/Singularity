@@ -1,0 +1,569 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Zen+Antique&display=swap");
+/*https://developer.mozilla.org/ja/docs/Web/CSS/transform*/
+
+@font-face {
+    font-family: 'myfont'; /* 瀞ノグリッチ黒体 */
+    /* フォーマットごとにパスを指定 */
+    /*src: url('../fonts/myfont.ttf') format('truetype');*/
+    src: url('./fonts/fonts/TrueType/H4.ttf');
+}
+
+@keyframes tl-color {
+    0% { color: #a3392d; }
+    15%{ color: #000000;}
+    20% { color: #867325; }
+    30%{ color: #000000;}
+    40% { color: #166455; }
+    55%{ color: #000000;}
+    60% { color: #19435f; }
+    70%{ color: #000000;}
+    80% { color: #59276d; }
+    95%{ color: #000000;}
+    100% { color: #5e1810; }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    font-family: 'myfont';
+    display: block;
+}
+
+body {
+    background-color: #c4c0c0;
+    height: 100%;
+}
+
+#header {
+    font-family: 'myfont';
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    min-width: 1000px;
+    height: 80px;
+    background-color: #c4c0c0;
+    color: #e74c3c;
+    animation: tl-color 5s infinite;
+    /*border-bottom: 4px solid #777777;*/
+}
+
+#gametitle {
+    font-family: 'myfont';
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    min-width: 100px;
+    height: 80px;
+    background-color: #000000;
+    color: #e74c3c;
+    animation: tl-color 5s infinite;
+        /*animation-name:fadeInAnime;
+        animation-duration:1s;
+        animation-fill-mode:forwards;
+        animation-iteration-count:1; 
+        opacity:0;*/
+    padding-bottom: 10px;
+    font-size: 50px; 
+    text-align: center;
+    /*border-bottom: 4px solid #777777;*/
+}
+
+#contents {
+    margin: 0px auto;
+    padding: 0px;
+    width: 760px;
+    /*background-image: url(../img/bg.gif);*/
+    overflow: auto;
+    color: #FFFFFF;
+}
+
+#main {
+    margin: 3px 10px 3px 3px;
+    padding-bottom: 40px;
+    width: 744px;
+    background-color: #000000;
+    border-radius: 6px;
+}
+
+#game {
+    margin: 0px auto;
+    padding: 0px;
+    padding-top: 40px;
+    width: 500px;
+    text-align: center;
+}
+
+#footer {
+    position: relative;
+    top: -45px;
+    left: -120px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    width: 720px;
+}
+
+.gametext {
+    text-align: center;
+    font-size: 30px;
+}
+
+.ex {
+    margin: 0px auto;
+    padding: 6px;
+    width: 500px;
+    text-align: right;
+}
+
+#expimg {
+    width: 100%;
+}
+
+.ad_728 {
+    margin: -20px auto;
+    margin-bottom: 15px;
+    padding: 0px;
+    width: 728px;
+    height: 90px;
+}
+
+.info {
+    margin: 0px auto;
+    padding: 20px;
+    width: 600px;
+    background-color: #406d38;
+    font-size: 13px;
+    line-height: 24px;
+    border-radius: 6px;
+    color: #CCC;
+}
+
+#img {
+    /*overflow-clip-margin: content-box;*/
+    margin-top: 15px;
+    margin-bottom: 10px;
+    overflow: clip;
+    /*display: block; 
+    margin: auto;
+    padding: 5px;*/
+    border: 5px solid green;
+    border-radius: 10px;
+    /*border: 10px solid rgb(0, 0, 0);*/
+}
+
+#question{
+    text-align: center;
+}
+
+#explain{
+    width: 123%;
+    position: absolute;
+    top: 0px;
+    right: -45px;
+}
+
+#nise_work {
+    /*background-image: url(pets-3715733_640.jpg);*/
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+a:visited {
+    color: #5DCDC3;
+}
+
+section {
+    margin: 16px auto;
+    width: 100%;
+    height: 300px;
+    border: solid 1px #000;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+    align-items: center;
+    padding: 0px;
+    transition: all .3s;
+}
+/*https://coco-factory.jp/ugokuweb/move01/7-1-20/*/
+.button:hover {
+    top:-3px;
+}
+
+#btn1 {
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+#btn2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#stbn {
+    width : 300px;
+    /*border: 10px solid green;*/
+    border-radius: 30px;
+}
+#exbn {
+    width : 300px;
+    border-radius: 30px;
+}
+
+#limit_timer {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+button, label {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+a:visited {
+    color: #8df7b0;
+    text-decoration: underline;
+}
+
+/*a:active {
+    color: #ff0000;
+    text-decoration: underline;
+}*/
+
+a:link {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+.btn-list {
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* ADD */
+    text-align: center;
+    justify-content:center;
+}
+
+.btn-list2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: nowrap;
+    width: 490px;
+    margin-top: 20px
+}
+
+.btn-1 {
+    font-family: 'myfont';
+    text-decoration: none;
+    background-color: #EC84A0;
+    color: #000000;
+    border-radius: 32px;
+    box-shadow: 3px 3px 10px #00000029;
+    border: 10px solid #555454;
+    font-size: 35px;
+    padding: 15px 30px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    transition: all .3s;
+    /*height: initial;*/
+}
+
+.btn-2 {
+    font-family: 'myfont';
+    text-decoration: none;
+    background-color: #87c9ff;
+    color: #000000;
+    border-radius: 32px;
+    box-shadow: 3px 3px 10px #00000029;
+    border: 10px solid #555454;
+    font-size: 35px;
+    padding: 15px 30px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    transition: all .3s;
+    /*height: initial;*/
+}
+
+.btn-3 {
+    font-family: 'myfont';
+    text-decoration: none;
+    background-color: #89f09f;
+    color: #000000;
+    border-radius: 32px;
+    box-shadow: 3px 3px 10px #00000029;
+    border: 10px solid #555454;
+    font-size: 35px;
+    padding: 15px 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    transition: all .3s;
+    margin-right: 5px;
+}
+
+.btn-4 {
+    font-family: 'myfont';
+    text-decoration: none;
+    background-color: #f6ff9e;
+    color: #000000;
+    border-radius: 32px;
+    box-shadow: 3px 3px 10px #00000029;
+    border: 10px solid #555454;
+    font-size: 35px;
+    padding: 15px 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    transition: all .3s;
+    margin-left: 5px;
+}
+
+.btn-5 {
+    width: 40%;
+    height: 50px;
+    font-family: 'myfont';
+    text-decoration: none;
+    background-color: #84f1dd;
+    color: #000000;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px #00000029;
+    border: 5px solid #555454;
+    font-size: 20px;
+    /*padding: 15px 30px;*/
+    margin-top: 20px;
+    margin-bottom: 40px;
+    transition: all .3s;
+    margin-left: 32px;
+}
+
+/*hoverをしたらボックスに影がつき、上に上がる*/
+button[class^="btn-"]:hover {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+#teikyo {
+    margin-bottom: 10px;
+}
+
+/*フェードイン*/
+.fadeIn{
+    animation-name:fadeInAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+
+@keyframes fadeInAnime{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+/*アニメーション関係*/  
+  #load {
+    position:absolute;
+    width:600px;
+    height:36px;
+    left:50%;
+    top:40%;
+    margin-left:-300px;
+    overflow:visible;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    cursor:default;
+    font-size: 20px;
+  }
+  
+  #load div {
+    position:absolute;
+    width:20px;
+    height:36px;
+    opacity:0;
+    font-family:Helvetica, Arial, sans-serif;
+    animation:move 2s linear infinite;
+    -o-animation:move 2s linear infinite;
+    -moz-animation:move 2s linear infinite;
+    -webkit-animation:move 2s linear infinite;
+    transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    color:#35C4F0;
+  }
+  
+  #load div:nth-child(2) {
+    animation-delay:0.2s;
+    -o-animation-delay:0.2s;
+    -moz-animation-delay:0.2s;
+    -webkit-animation-delay:0.2s;
+  }
+  #load div:nth-child(3) {
+    animation-delay:0.4s;
+    -o-animation-delay:0.4s;
+    -webkit-animation-delay:0.4s;
+    -webkit-animation-delay:0.4s;
+  }
+  #load div:nth-child(4) {
+    animation-delay:0.6s;
+    -o-animation-delay:0.6s;
+    -moz-animation-delay:0.6s;
+    -webkit-animation-delay:0.6s;
+  }
+  #load div:nth-child(5) {
+    animation-delay:0.8s;
+    -o-animation-delay:0.8s;
+    -moz-animation-delay:0.8s;
+    -webkit-animation-delay:0.8s;
+  }
+  #load div:nth-child(6) {
+    animation-delay:1s;
+    -o-animation-delay:1s;
+    -moz-animation-delay:1s;
+    -webkit-animation-delay:1s;
+  }
+  #load div:nth-child(7) {
+    animation-delay:1.2s;
+    -o-animation-delay:1.2s;
+    -moz-animation-delay:1.2s;
+    -webkit-animation-delay:1.2s;
+  }
+  
+  @keyframes move {
+    0% {
+      left:0;
+      opacity:0;
+    }
+    35% {
+      left: 41%; 
+      -moz-transform:rotate(0deg);
+      -webkit-transform:rotate(0deg);
+      -o-transform:rotate(0deg);
+      transform:rotate(0deg);
+      opacity:1;
+    }
+    65% {
+      left:59%; 
+      -moz-transform:rotate(0deg); 
+      -webkit-transform:rotate(0deg); 
+      -o-transform:rotate(0deg);
+      transform:rotate(0deg); 
+      opacity:1;
+    }
+    100% {
+      left:100%; 
+      -moz-transform:rotate(-180deg); 
+      -webkit-transform:rotate(-180deg); 
+      -o-transform:rotate(-180deg); 
+      transform:rotate(-180deg);
+      opacity:0;
+    }
+  }
+  
+  @-moz-keyframes move {
+    0% {
+      left:0; 
+      opacity:0;
+    }
+    35% {
+      left:41%; 
+      -moz-transform:rotate(0deg); 
+      transform:rotate(0deg);
+      opacity:1;
+    }
+    65% {
+      left:59%; 
+      -moz-transform:rotate(0deg); 
+      transform:rotate(0deg);
+      opacity:1;
+    }
+    100% {
+      left:100%; 
+      -moz-transform:rotate(-180deg); 
+      transform:rotate(-180deg);
+      opacity:0;
+    }
+  }
+  
+  @-webkit-keyframes move {
+    0% {
+      left:0; 
+      opacity:0;
+    }
+    35% {
+      left:41%; 
+      -webkit-transform:rotate(0deg); 
+      transform:rotate(0deg); 
+      opacity:1;
+    }
+    65% {
+      left:59%; 
+      -webkit-transform:rotate(0deg); 
+      transform:rotate(0deg); 
+      opacity:1;
+    }
+    100% {
+      left:100%;
+      -webkit-transform:rotate(-180deg); 
+      transform:rotate(-180deg); 
+      opacity:0;
+    }
+  }
+  
+  @-o-keyframes move {
+    0% {
+      left:0; 
+      opacity:0;
+    }
+    35% {
+      left:41%; 
+      -o-transform:rotate(0deg); 
+      transform:rotate(0deg); 
+      opacity:1;
+    }
+    65% {
+      left:59%; 
+      -o-transform:rotate(0deg); 
+      transform:rotate(0deg); 
+      opacity:1;
+    }
+    100% {
+      left:100%; 
+      -o-transform:rotate(-180deg); 
+      transform:rotate(-180deg); 
+      opacity:0;
+    }
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  @media only screen and (max-device-width: 720px) {
+    .mobile {
+        /*display: initial;*/
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    input[type=text] {
+        font-size: 16px;
+        transform: scale(0.8);
+    }
+  }
