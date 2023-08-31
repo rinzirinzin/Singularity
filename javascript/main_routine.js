@@ -66,7 +66,7 @@ function LinkCheck(clickbtn){
     buttonsound.currentTime = 0;
     buttonsound.play();
     if(clickbtn === 1){
-        document.getElementById("explain").innerHTML = '<img src="./exp.jpg" id="expimg"></img><button class="btn-5" Onclick="LinkCheck(4)" type="button"> Return </button>';
+        document.getElementById("explain").innerHTML = '<img src="./image/exp.jpg" id="expimg"></img><button class="btn-5" Onclick="LinkCheck(4)" type="button"> Return </button>';
         document.getElementById('btn-list').innerHTML = "";
     }
     if(clickbtn === 2){
