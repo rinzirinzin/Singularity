@@ -61,7 +61,7 @@ loading();
 //ボタンがクリックされた時の処理
 function LinkCheck(clickbtn){
     esc = false;
-    /*押されたボタン*/
+    //押されたボタン
     //console.log(btn);
     buttonsound.currentTime = 0;
     buttonsound.play();
