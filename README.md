@@ -1,6 +1,6 @@
 # Typing
 Captchav1(認証のグニャグニャ文字)っぽい画像をタイピングするゲームです。<br>
-ルールはURL先の"How to play"ボタンから参照してください。
+ルールはURL先の"How to play"ボタンから確認してください。
 
 # URL
 https://rinzirinzin.github.io/Singularity/
