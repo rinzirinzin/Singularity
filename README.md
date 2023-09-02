@@ -1,4 +1,4 @@
-# Typing
+# Singularity Typing
 Captchav1(認証のグニャグニャ文字)っぽい画像をタイピングするゲームです。<br>
 ルールはURL先の"How to play"ボタンから確認してください。
 
